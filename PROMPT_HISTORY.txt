@@ -1,0 +1,32 @@
+Strategy & Tools
+I adopted a modular "MVP first" strategy, 
+prioritizing a functional grid-based engine and infinite lane generation before layering on 
+"voxel-style" aesthetics and collision polish to maximize progress within the hour. I utilized 
+Python with the pygame library and leveraged Gemini to act as the Lead Developer for 
+code generation and debugging.
+
+Here is a chronological record of the prompts you sent during this session:
+
+1. hey! i want to do this HW: Goal: Use AI tools strategically to recreate the game Crossy Road in Python, making as much progress as possible in exactly one hour. Context: This assignment asks you to choose a strategy and a set of tools that will yield the most progress insight a tight time constraint. Why This Matters: This is a chance to practice prompting AI effectively and thoughtfully to arrive at a desirable result quickly.
+2. alright I will follow what prompts you told me to give: Hi Gemini, Act as a senior Python game developer. We are building a Crossy Road clone using pygame in a grid-based system. Step 1: Provide the boilerplate code to initialize a window, define a 40x40 pixel grid, and create a Player class that moves one grid square at a time with arrow keys. Keep the code modular.
+3. Now, create a Lane class. There should be two types: 'Road' (gray) and 'Grass' (green). Roads should spawn 'Car' objects that move at a constant speed. Use a list to manage multiple lanes and ensure new lanes generate at the top as the player moves forward.
+4. yes please, give me the updated script as a whole
+5. why is there an error in pygame
+6. what should i do after pasting this into my file
+7. this is so ugly give me some aesthetic taste :(
+8. we havent defined chicken body yet
+9. so now this game doesn't have an indication of the chicken crashing the car and it doesn't have a game over sign and it doesn't have a start sign and it doesn't appear to record your points while playing. I want you to improve that. *[Followed by code paste]*
+10. Give the score a background because now it's the same color as the road. So when it overlaps you can't see it. also Lessen the number of car lanes that the player can see at once. And move the chicken character. somewhat upwards to the middle of the screen because it's too small and two at the bottom at this moment. That makes it very hard to see.
+11. why is the gap so wierd
+12. give me the entire main block
+13. What should I put in the terminal to make Maine Run pygame?
+14. I observed that this chicken can move downwards backing away from the lane. But its relative place on my screen will stay down there. Delete the backing away option. *[Followed by code paste]*
+15. Press any key to start, press any key to start again, and Total points are very hard to see either. Make it white, please.
+16. avoid this large chunk of blank space
+17. these chunks still exist?? and I dont want any existing lanes below the chick at the beginning of the game
+18. you still have large spaces where no lanes are generated--i only want a gap of the width of 3 lanes maximum. And what is this chunk of blue, get rid of it. Also no need to indicate that starting line at the beginning-- its ugly, no need for blue, just make sure i start with nothing behind me. Go back to this version and fix. *[Followed by code paste]*
+19. get rid of those black lines indicating separation of lanes, its ugly. Also make the visual more beautiful (see p2 the original game, so nice)
+20. It happens at a certain point when I get to somewhere the scenery above just disappears and changes into this. blue stuff
+21. Really? Well done. One last final touch I want you to add is that you've already generated trees on the lanes. However, I can still move through these trees without anything stopping me. I want the character to only be able to move through. plain grasslands with no trees
+22. and can you add a cute explosion graphic while the chicken crash
+23. Anything else is perfect except for I can still stand upon those trees. They're not stopping me. Current code: *[Followed by code paste]*
